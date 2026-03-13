@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
 
 type Props = {
@@ -15,7 +15,9 @@ export function Nav({nomePerfil, fotoPerfil}: Props) {
                 />
                 <Text style={styles.nomePerfil}>{nomePerfil}</Text>
             </View>
-            <AntDesign name="ellipsis" size={24} color="black" />
+            <TouchableOpacity>
+              <AntDesign name="ellipsis" size={24} color="black" />
+            </TouchableOpacity>
         </View>
     )
 }

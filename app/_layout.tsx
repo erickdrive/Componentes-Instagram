@@ -11,7 +11,8 @@ const dados = [
     like: "8.9k", 
     comentario:"900", 
     compartilhado:"758",
-    imagemFeed:"https://i.pinimg.com/736x/75/b5/6b/75b56b51ddc1a2bd647e696f2c42e71f.jpg"
+    imagemFeed:"https://i.pinimg.com/736x/75/b5/6b/75b56b51ddc1a2bd647e696f2c42e71f.jpg",
+    curtido: true
   },
   {
     nomePerfil:"Marcelo freitas",
@@ -19,7 +20,8 @@ const dados = [
     like: "8.9k", 
     comentario:"900", 
     compartilhado:"758",
-    imagemFeed:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzs6nqLlhJJuO3u5f6Jzd0rypB2DJ3_kcNA&s"
+    imagemFeed:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzs6nqLlhJJuO3u5f6Jzd0rypB2DJ3_kcNA&s",
+    curtido: false
   },
   {
     nomePerfil:"Marcos",
@@ -27,7 +29,8 @@ const dados = [
     like: "8.9k", 
     comentario:"900", 
     compartilhado:"758",
-    imagemFeed:"https://i.pinimg.com/originals/98/af/8a/98af8a877355f98c8db3eeaee998feef.jpg"
+    imagemFeed:"https://i.pinimg.com/originals/98/af/8a/98af8a877355f98c8db3eeaee998feef.jpg",
+    curtido: false
   },
 ]
 
@@ -51,6 +54,7 @@ export default function RootLayout() {
                       like = {dados.like}
                       comentario = {dados.comentario} 
                       compartilhado = {dados.compartilhado}
+                      curtido = {dados.curtido}
                     />
                   </View>
               )
